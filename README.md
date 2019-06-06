@@ -26,6 +26,7 @@ In alphabetical order, the technologies used are:
 - [Elm](#Elm)
 - [Imba](#Imba)
 - [React](#React)
+- [Stencil](#Stencil) 
 - [Svelte](#Svelte)
 - [Vue](#Vue)
 
@@ -71,6 +72,18 @@ https://reactjs.org/
 
 - [create-react-app](#)
 - [react-router](#)
+
+### Stencil
+
+https://stenciljs.com/
+
+**Setup**
+
+```
+mkdir stencil
+cd stencil
+npm init stencil
+```
 
 ### Svelte
 
