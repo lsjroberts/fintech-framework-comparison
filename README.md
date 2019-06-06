@@ -90,7 +90,7 @@ npm install
 npm run dev
 ```
 
-### Vue
+### Vue
 
 https://vuejs.org/
 
