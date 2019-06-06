@@ -31,9 +31,13 @@ In alphabetical order, the technologies used are:
 
 ### Angular
 
+https://angular.io/
+
 ...
 
 ### Elm
+
+https://elm-lang.org/
 
 **Setup**
 
@@ -55,9 +59,13 @@ elm-app start
 
 ### Imba
 
+http://imba.io/
+
 ...
 
 ### React
+
+https://reactjs.org/
 
 **Dependencies**
 
@@ -65,6 +73,8 @@ elm-app start
 - [react-router](#)
 
 ### Svelte
+
+https://svelte.dev/
 
 **Setup**
 
@@ -81,6 +91,8 @@ npm run dev
 ```
 
 ### Vue
+
+https://vuejs.org/
 
 **Setup**
 
