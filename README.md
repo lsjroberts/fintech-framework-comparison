@@ -26,17 +26,30 @@ In alphabetical order, the technologies used are:
 - [Elm](#Elm)
 - [Imba](#Imba)
 - [React](#React)
-- [Stencil](#Stencil) 
+- [Stencil](#Stencil)
 - [Svelte](#Svelte)
 - [Vue](#Vue)
 
-### Angular
+## Server
+
+Each app connects to an [Elixir](https://elixir-lang.org/) [server](https://phoenixframework.org/) providing a [GraphQL](https://graphql.org/) endpoint. Where it exists, an [Apollo](https://www.apollographql.com/) client is used for the framework in question.
+
+**Getting Started**
+
+```
+cd server
+mix phx.server
+```
+
+## Angular
 
 https://angular.io/
 
-...
+**Dependencies**
 
-### Elm
+- [typescript](#)
+
+## Elm
 
 https://elm-lang.org/
 
@@ -58,13 +71,13 @@ elm-app start
 
 - [elm-ui](#)
 
-### Imba
+## Imba
 
 http://imba.io/
 
 ...
 
-### React
+## React
 
 https://reactjs.org/
 
@@ -72,8 +85,9 @@ https://reactjs.org/
 
 - [create-react-app](#)
 - [react-router](#)
+- [typescript](#)
 
-### Stencil
+## Stencil
 
 https://stenciljs.com/
 
@@ -85,9 +99,14 @@ cd stencil
 npm init stencil
 ```
 
-### Svelte
+## Svelte
 
 https://svelte.dev/
+
+**Dependencies**
+
+- [svelte-apollo](https://github.com/timhall/svelte-apollo)
+- [svelte-routing](https://github.com/EmilTholin/svelte-routing)
 
 **Setup**
 
@@ -103,7 +122,7 @@ npm install
 npm run dev
 ```
 
-### Vue
+## Vue
 
 https://vuejs.org/
 
