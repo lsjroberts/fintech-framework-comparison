@@ -21,20 +21,21 @@ defmodule ServerWeb do
     quote do
       use Phoenix.Controller, namespace: ServerWeb
       import Plug.Conn
-      import ServerWeb.Router.Helpers
+      # import ServerWeb.Router.Helpers
       import ServerWeb.Gettext
     end
   end
 
   def view do
     quote do
-      use Phoenix.View, root: "lib/server_web/templates",
-                        namespace: ServerWeb
+      use Phoenix.View,
+        root: "lib/server_web/templates",
+        namespace: ServerWeb
 
       # Import convenience functions from controllers
       import Phoenix.Controller, only: [get_flash: 2, view_module: 1]
 
-      import ServerWeb.Router.Helpers
+      # import ServerWeb.Router.Helpers
       import ServerWeb.ErrorHelpers
       import ServerWeb.Gettext
     end

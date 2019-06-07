@@ -7,7 +7,7 @@ use Mix.Config
 
 # General application configuration
 config :server,
-  ecto_repos: [Server.Repo]
+  ecto_repos: []
 
 # Configures the endpoint
 config :server, ServerWeb.Endpoint,
