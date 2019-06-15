@@ -22,19 +22,15 @@ Please remember, at the end of the day there is no absolute right or wrong frame
 
 In alphabetical order, the technologies used are:
 
-- [Angular](#Angular) ❌
-- [Elm](#Elm) ❌
-- [Imba](#Imba) ❌
-- [React](#React) ❌
-- [Stencil](#Stencil) ❌
-- [Svelte](#Svelte) 🚧
-- [Vue](#Vue) ❌
+- ❌ [Angular](#Angular)
+- 🚧 [Elm](#Elm)
+- ❌ [Imba](#Imba)
+- ❌ [React](#React)
+- ❌ [Stencil](#Stencil)
+- 🚧 [Svelte](#Svelte)
+- ❌ [Vue](#Vue)
 
 If you think a framework or language is missing, please [raise an issue](https://github.com/lsjroberts/fintech-framework-comparison/issues/new).
-
-- ✅ Complete
-- 🚧 Work in progress
-- ❌ Not started
 
 ## Server
 
@@ -49,6 +45,8 @@ mix phx.server
 
 ## Angular
 
+❌ Not started
+
 https://angular.io/
 
 **Dependencies**
@@ -56,6 +54,8 @@ https://angular.io/
 - [typescript](#)
 
 ## Elm
+
+🚧 Work in progress
 
 https://elm-lang.org/
 
@@ -75,15 +75,20 @@ elm-app start
 
 **Dependencies**
 
-- [elm-ui](#)
+- [elm-graphql](https://package.elm-lang.org/packages/dillonkearns/elm-graphql/latest)
+- [elm-ui](https://package.elm-lang.org/packages/mdgriffith/elm-ui/latest)
 
 ## Imba
+
+❌ Not started
 
 http://imba.io/
 
 ...
 
 ## React
+
+❌ Not started
 
 https://reactjs.org/
 
@@ -95,17 +100,21 @@ https://reactjs.org/
 
 ## Stencil
 
+❌ Not started
+
 https://stenciljs.com/
 
 **Setup**
 
 ```
-mkdir stencil
-cd stencil
 npm init stencil
+> ✔ Pick a starter › app
+> ✔ Project name › stencil
 ```
 
 ## Svelte
+
+🚧 Work in progress
 
 https://svelte.dev/
 
@@ -129,6 +138,8 @@ npm run dev
 ```
 
 ## Vue
+
+❌ Not started
 
 https://vuejs.org/
 

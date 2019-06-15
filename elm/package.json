@@ -1,0 +1,19 @@
+{
+  "name": "elm",
+  "version": "1.0.0",
+  "description": "This project is bootstrapped with [Create Elm App](https://github.com/halfzebra/create-elm-app).",
+  "main": "index.js",
+  "directories": {
+    "test": "tests"
+  },
+  "dependencies": {
+    "@dillonkearns/elm-graphql": "^3.6.2"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "api": "elm-graphql http://localhost:4000/graphiql"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}

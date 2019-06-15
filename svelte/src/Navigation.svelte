@@ -13,8 +13,9 @@
     color: #383e4b;
     flex: 1;
     font-weight: 600;
+    line-height: 1;
     margin: 0;
-    padding: 12px;
+    padding: 15px 12px;
     text-align: center;
     transition: background-color ease-out 0.1s, color ease-out 0.1s;
   }

@@ -8,7 +8,7 @@
   }
 
   .indicator {
-    font-size: 52px;
+    font-size: 56px;
   }
 </style>
 

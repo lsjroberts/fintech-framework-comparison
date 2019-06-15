@@ -5,7 +5,7 @@
   let units = "%";
   let dp = 2;
 
-  let formatter = new Intl.NumberFormat(undefined, {
+  const formatter = new Intl.NumberFormat(undefined, {
     minimumFractionDigits: dp,
     maximumFractionDigits: dp
   });

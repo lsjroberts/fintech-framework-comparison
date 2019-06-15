@@ -35,7 +35,7 @@
   h3 {
     color: #575c67;
     font-size: 14px;
-    margin-bottom: 14px;
+    margin-bottom: 18px;
   }
 
   h4 {
@@ -44,11 +44,12 @@
   }
 
   .value {
+    margin-bottom: 4px;
     font-size: 28px;
   }
 
   .assets li {
-    margin-bottom: 14px;
+    margin-bottom: 18px;
   }
 
   .assets li:last-child {
