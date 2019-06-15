@@ -3,6 +3,7 @@
   import { getClient, query } from "svelte-apollo";
 
   import Card from "./components/Card.svelte";
+  import Loading from "./components/Loading.svelte";
 
   const client = getClient();
   const rates = query(client, {
@@ -20,19 +21,19 @@
 
 <style>
   h2 {
+    color: #444;
     font-size: 14px;
     line-height: 1;
     margin: 0 0 4px 0;
   }
 
   span {
-    color: #ccc;
+    /* color: #ccc; */
     font-size: 28px;
     line-height: 1;
   }
 
   em {
-    color: #ffffff;
     font-weight: 600;
     font-style: normal;
   }
@@ -43,29 +44,20 @@
 </style>
 
 {#await $rates}
-  Loading...
+  <Loading />
 {:then result}
   <!-- {#each result.data.exchangeRates as { label, value }} -->
   <Card>
     <h2>EUR / GBP</h2>
-    <span>
-      <!-- prettier-ignore -->
-       {result.data.exchangeRates.gbp}
-    </span>
+    <span>{result.data.exchangeRates.gbp}</span>
   </Card>
   <Card>
     <h2>EUR / USD</h2>
-    <span>
-      <!-- prettier-ignore -->
-       {result.data.exchangeRates.usd}
-    </span>
+    <span>{result.data.exchangeRates.usd}</span>
   </Card>
   <Card>
     <h2>EUR / JPY</h2>
-    <span>
-      <!-- prettier-ignore -->
-       {result.data.exchangeRates.jpy}
-    </span>
+    <span>{result.data.exchangeRates.jpy}</span>
   </Card>
   <!-- {/each} -->
 {:catch error}

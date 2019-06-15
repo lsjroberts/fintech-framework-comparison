@@ -22,13 +22,19 @@ Please remember, at the end of the day there is no absolute right or wrong frame
 
 In alphabetical order, the technologies used are:
 
-- [Angular](#Angular)
-- [Elm](#Elm)
-- [Imba](#Imba)
-- [React](#React)
-- [Stencil](#Stencil)
-- [Svelte](#Svelte)
-- [Vue](#Vue)
+- [Angular](#Angular) ❌
+- [Elm](#Elm) ❌
+- [Imba](#Imba) ❌
+- [React](#React) ❌
+- [Stencil](#Stencil) ❌
+- [Svelte](#Svelte) 🚧
+- [Vue](#Vue) ❌
+
+If you think a framework or language is missing, please [raise an issue](https://github.com/lsjroberts/fintech-framework-comparison/issues/new).
+
+- ✅ Complete
+- 🚧 Work in progress
+- ❌ Not started
 
 ## Server
 

@@ -1,7 +1,6 @@
 <style>
   header {
-    background-color: #2ce698;
-    margin-bottom: 4px;
+    background-color: #37d693;
     padding: 24px 16px 20px;
   }
 

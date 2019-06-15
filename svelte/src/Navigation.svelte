@@ -25,17 +25,18 @@
   }
 
   nav :global(a[aria-current]) {
-    background-color: #383e4b;
+    background-color: #2ce698;
     color: #f7f7f7;
   }
 
   nav :global(a[aria-current]:hover) {
-    background-color: #383e4b;
+    background-color: #2ce698;
   }
 </style>
 
 <nav>
-  <Link to="/forex">Forex</Link>
+  <Link to="/">Summary</Link>
+  <Link to="/securities">Securities</Link>
   <Link to="/positions">Positions</Link>
-  <Link to="/history">History</Link>
+  <Link to="/forex">Forex</Link>
 </nav>
