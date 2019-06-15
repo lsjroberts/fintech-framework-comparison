@@ -292,21 +292,13 @@ type Format
 formatValue : { format : Format, value : Float } -> Element Msg
 formatValue { format, value } =
     let
-        normalised =
+        ( normalised, units ) =
             case format of
                 Percent ->
-                    value * 100
+                    ( value * 100, "%" )
 
                 Notional ->
-                    value / 1000000
-
-        units =
-            case format of
-                Percent ->
-                    "%"
-
-                Notional ->
-                    "M"
+                    ( value / 1000000, "M" )
 
         points =
             "2"
