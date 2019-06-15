@@ -28,25 +28,12 @@
 
         formatted() {
           let value = this.attributes.value.value;
-          let format = this.attributes.format
-            ? this.attributes.format.value
-            : "percent";
-
-          let units = "%";
-          let dp = 2;
-
-          if (format === "percent") {
-            value = value * 100;
-          }
-
-          if (format === "notional") {
-            value = value / 1000000;
-            units = "M";
-          }
+          let units = this.attributes.units.value;
+          let dp = this.attributes.decimalPoints.value;
 
           const formatter = new Intl.NumberFormat(undefined, {
-            minimumFractionDigits: 2,
-            maximumFractionDigits: 2
+            minimumFractionDigits: parseInt(dp, 10),
+            maximumFractionDigits: parseInt(dp, 10)
           });
 
           return `${formatter.format(parseFloat(value))}${units}`;

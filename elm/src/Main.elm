@@ -198,14 +198,14 @@ viewSummary summary =
         , card <|
             column [ spacing 18 ]
                 [ label "Assets"
-                , asset "notional" "total assets" summary.totalAssets
-                , asset "percent" "liquidity" summary.liquidity.percent
-                , asset "percent" "positions" summary.positions.percent
+                , asset Notional "total assets" summary.totalAssets
+                , asset Percent "liquidity" summary.liquidity.percent
+                , asset Percent "positions" summary.positions.percent
                 ]
         , card <|
             column [ spacing 18 ]
                 [ label "Profit & Loss"
-                , asset "percent" "one day" summary.pnl.percent
+                , asset Percent "one day" summary.pnl.percent
                 ]
         ]
 
@@ -284,13 +284,39 @@ darkCard =
         ]
 
 
-formatValue : { format : String, value : Float } -> Element Msg
+type Format
+    = Percent
+    | Notional
+
+
+formatValue : { format : Format, value : Float } -> Element Msg
 formatValue { format, value } =
+    let
+        normalised =
+            case format of
+                Percent ->
+                    value * 100
+
+                Notional ->
+                    value / 1000000
+
+        units =
+            case format of
+                Percent ->
+                    "%"
+
+                Notional ->
+                    "M"
+
+        points =
+            "2"
+    in
     html <|
         Html.node "format-value"
-            [ Html.Attributes.attribute "format" format
+            [ Html.Attributes.attribute "units" units
+            , Html.Attributes.attribute "decimalPoints" points
             , Html.Attributes.attribute "value"
-                (String.fromFloat value)
+                (String.fromFloat normalised)
             ]
             []
 
